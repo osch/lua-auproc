@@ -31,8 +31,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 ##   Module Functions
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_audio_mixer">**`  auproc.new_audio_mixer(audioIn[, audioIn]*, audioOut, mixCtrl)
-  `**</a>
+* <span id="auproc_new_audio_mixer">**`auproc.new_audio_mixer(audioIn[, audioIn]*, audioOut, mixCtrl)
+  `**</span>
 
   Returns a new audio mixer object. The audio mixer object is a 
   [processor object](#processor-objects).
@@ -53,8 +53,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_midi_mixer">**`  auproc.new_midi_mixer(midiIn[, midiIn]*, midiOut, mixCtrl)
-  `**</a>
+* <span id="auproc_new_midi_mixer">**`auproc.new_midi_mixer(midiIn[, midiIn]*, midiOut, mixCtrl)
+  `**</span>
 
   * *midiIn*   - one or more [connector objects](#connector-objects) of type *MIDI IN*.
   * *midiOut*  - [connector object](#connector-objects) of type *MIDI OUT*.
@@ -72,8 +72,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_midi_receiver">**`  auproc.new_midi_receiver(midiIn, receiver)
-  `**</a>
+* <span id="auproc_new_midi_receiver">**`auproc.new_midi_receiver(midiIn, receiver)
+  `**</span>
 
   Returns a new midi receiver object. The midi receiver object is a 
   [processor object](#processor-objects).
@@ -95,8 +95,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_midi_sender">**`  auproc.new_midi_sender(midiOut, sender)
-  `**</a>
+* <span id="auproc_new_midi_sender">**`auproc.new_midi_sender(midiOut, sender)
+  `**</span>
   
   Returns a new midi sender object. The midi sender object is a 
   [processor object](#processor-objects).
@@ -124,8 +124,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_audio_sender">**`  auproc.new_audio_sender(audioOut, sender)
-  `**</a>
+* <span id="auproc_new_audio_sender">**`auproc.new_audio_sender(audioOut, sender)
+  `**</span>
 
   Returns a new audio sender object. The audio sender object is a 
   [processor object](#processor-objects).
@@ -152,8 +152,8 @@ or [lrtaudio](https://github.com/osch/lua-lrtaudio).
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="auproc_new_audio_receiver">**`  auproc.new_audio_receiver(audioIn, receiver)
-  `**</a>
+* <span id="auproc_new_audio_receiver">**`auproc.new_audio_receiver(audioIn, receiver)
+  `**</span>
 
   Returns a new audio receiver object. The audio receiver object is a 
   [processor object](#processor-objects).
@@ -203,8 +203,8 @@ The above builtin processor objects are implementing the following methods:
   
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="processor_activate">**`       processor:activate()
-  `** </a>
+* <span id="processor_activate">**`processor:activate()
+  `** </span>
   
   Activates the processor object. A activated processor object is taking part in realtime audio
   processing, i.e. the associated *processCallback* is periodically called in the realtime 
@@ -212,8 +212,8 @@ The above builtin processor objects are implementing the following methods:
   
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="processor_deactivate">**`     processor:deactivate()
-  `** </a>
+* <span id="processor_deactivate">**`processor:deactivate()
+  `** </span>
   
   Deactivates the processor object. A deactivated processor object can be activated again 
   by calling [processor:activate()](#processor_activate).
@@ -221,8 +221,8 @@ The above builtin processor objects are implementing the following methods:
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
-* <a id="processor_close">**`     processor:close()
-  `** </a>
+* <span id="processor_close">**`processor:close()
+  `** </span>
   
   Closes the processor object. A closed processor object is invalid and cannot be used
   furthermore.
